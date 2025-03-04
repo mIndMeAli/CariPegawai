@@ -1,8 +1,13 @@
 import express from "express";
 import cors from "cors";
+import fetch from "node-fetch";
 
 const app = express();
-app.use(cors());
+app.use(cors({
+    origin: "*",
+    methods: "GET,POST,PUT,DELETE",
+    allowedHeaders: "Content-Type"
+}));
 
 const sheetId = "164L2UMb-T9noESkielSMdyBj3izEg2bDcv6oMysEZ9I";
 
