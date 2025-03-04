@@ -25,5 +25,7 @@ app.get("/data", async (req, res) => {
     }
 });
 
+app.listen(PORT, () => console.log(`Server berjalan di port ${PORT}`));
+
 const PORT = 3000;
 app.listen(PORT, () => console.log(`Server berjalan di port ${PORT}`));
